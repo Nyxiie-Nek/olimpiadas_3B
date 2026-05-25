@@ -2,7 +2,7 @@ const modalidades = ["Ginástica", "Judô", "Surfe", "Vôlei"];
 
 //Com base na constante modalidade, 
 //Coloque o número que represente o esporte do seu grupo
-const escolha = ?;
+const escolha = 0;
 
 document.querySelector('body').style.backgroundImage = "url('img/"+modalidades[escolha]+".png')";
 document.querySelector('title').textContent = "Missão Olímpica | "+modalidades[escolha];
@@ -20,7 +20,7 @@ let historiaFinal = "";
 
 //Assim como a variável atual (acima)
 //Crie uma variável com o nome pontos que inicie com 0
-
+let pontos = 0
 
 function mostraPergunta(){
     if(atual >= perguntas[escolha].length){
@@ -60,6 +60,7 @@ function mostraResultado(){
 }
 
 //crie uma função podiumMedalhas
+function podiumMedalhas(){
 //E verifique a quantidade de pontos
 //  - Se pontos igual a 3 ganha bronze, dentro dessa condicional:
 //    Utilize a linha de código abaixo para modificar o CSS e inserir uma medalha
@@ -79,5 +80,6 @@ function mostraResultado(){
 //    altere o textContent do caixaPerguntas para "Resultado da competição: PERDEU!";
 //2 Dentro de cada SE altere o conteúdo de texto de caixaPerguntas exemplo
 //     Quando ouro coloque "Resultado da competição: 3 pontos é BRONZE!";
+}
 
 mostraPergunta(); 
