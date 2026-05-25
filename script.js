@@ -84,7 +84,7 @@ function podiumMedalhas(){
         caixaPerguntas.textContent = "Resultado da competição: 5 pontos é OURO!";
     }
 //  - Se pontos menor que 3
-    else if (pontos > 3){
+    else if (pontos < 3){
 //    Utilize a linha de código abaixo para modificar o CSS e inserir uma medalha
         caixaPrincipal.style.backgroundImage = "url('img/perdeu.png')";
 //    altere o textContent do caixaPerguntas para "Resultado da competição: PERDEU!";
